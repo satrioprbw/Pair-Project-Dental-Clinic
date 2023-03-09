@@ -18,7 +18,7 @@
   <p>
     <%= values.timeStart.slice(0,5) %> - <%= values.timeEnd.slice(0,5) %>
   </p>
-  <form action="/appointments/add" method="post">
+  <form action="/appointments/<%= values.id %>" method="post">
     <p>Treatment</p>
     <select name="treatment">
       <option selected hidden value="">Select One:</option>
