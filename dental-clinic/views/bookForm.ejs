@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Form</title>
+</head>
+
+<body>
+  <h1>Book Form</h1>
+  <p><%= values.name %></p>
+  <p><%= values.specialty %></p>
+  <p><% values.day.split(',').forEach(el => { %>
+    <%= el %>
+  <% }) %></p>
+  <p>
+    <%= values.timeStart.slice(0,5) %> - <%= values.timeEnd.slice(0,5) %>
+  </p>
+  <form action="/appointments/<%= values.id %>" method="post">
+    <p>Treatment</p>
+    <select name="treatment">
+      <option selected hidden value="">Select One:</option>
+      <% if(values.specialty=='General Dentist' ){ %>
+        <option value="Cabut Gigi">Cabut Gigi</option>
+        <option value="Scaling Gigi">Scaling Gigi</option>
+        <option value="Tambal Gigi">Tambal Gigi</option>
+        <option value="Kawat Gigi">Kawat Gigi</option>
+        <option value="Gigi Palsu">Gigi Palsu</option>
+        <option value="Lainnya">Lainnya</option>
+        <% } else if(values.specialty=='Oral & Maxillofacial Surgery' ){ %>
+          <option value="Cabut Gigi">Cabut Gigi</option>
+          <option value="Cabut Gigi Bungsu">Cabut Gigi Bungsu</option>
+          <% } else if(values.specialty=='Conservative Dentistry' ){ %>
+            <option value="Tambal Gigi">Tambal Gigi</option>
+            <option value="Tambal Gigi">Tambal Gigi Kompleks</option>
+            <% } else if (values.specialty=='Periodontist' ){ %>
+              <option value="Scaling Gigi">Scaling Gigi</option>
+              <% } else if (values.specialty=='Orthodontist' ){ %>
+                <option value="Kawat Gigi">Kawat Gigi</option>
+                <% } else if (values.specialty=='Prosthodontist' ){ %>
+                  <option value="Gigi Palsu">Gigi Palsu</option>
+                  <%} %>
+    </select>
+    <p>Schedule</p>
+    Day <input type="date" name="day" min="<%= new Date().toLocaleDateString('fr-CA') %>"> <br> <br>
+    Time <input type="time" name="time" min="<%= values.timeStart.slice(0,5) %>" max="<%= values.timeEnd.slice(0,5) %>">
+    </select> <br> <br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+
+
+</html>
