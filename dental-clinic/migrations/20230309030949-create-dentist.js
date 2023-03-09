@@ -22,10 +22,10 @@ module.exports = {
         type: Sequelize.STRING
       },
       timeStart: {
-        type: Sequelize.DATE
+        type: Sequelize.TIME
       },
       timeEnd: {
-        type: Sequelize.DATE
+        type: Sequelize.TIME
       },
       experienceYear: {
         type: Sequelize.STRING

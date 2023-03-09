@@ -10,6 +10,8 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
+      Appointment.belongsTo(models.Dentist)
+      Appointment.belongsTo(models.User)
       // define association here
     }
   }
@@ -17,7 +19,9 @@ module.exports = (sequelize, DataTypes) => {
     appointmentStatus: DataTypes.STRING,
     treatment: DataTypes.STRING,
     schedule: DataTypes.DATE,
-    price: DataTypes.INTEGER
+    price: DataTypes.INTEGER,
+    UserId: DataTypes.INTEGER,
+    DentistId: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'Appointment',
