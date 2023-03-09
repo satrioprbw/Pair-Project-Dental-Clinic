@@ -1,1 +1,2 @@
-console.log(new Date().getDay())
+const uuid = require('uuid') 
+console.log(uuid.v4())

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Form</title>
+</head>
+<body>
+  <h1>Add User</h1>
+  <form action="/addUser" method="post">
+    <p>Username</p>
+    <input type="text" name="username">
+    <p>Email</p>
+    <input type="text" name="email">
+    <p>Password</p>
+    <input type="text" name="password">
+    <br><br>
+
+  <h1>Add Profile</h1>
+    <p>First Name</p>
+    <input type="text" name="first_name">
+    <p>Last Name</p>
+    <input type="text" name="last_name">
+    <p>Gender</p>
+    <input type="radio" name="gender" value="Male">
+    <input type="radio" name="gender" value="Female">
+    <p>Phone Number</p>
+    <input type="text" name="phone">
+    <p>Birth Date</p>
+    <input type="date" name="birthDate">
+    <br><br>
+    <button type="submit">Submit</button>
+  </form>
+  
+</body>
+</html>

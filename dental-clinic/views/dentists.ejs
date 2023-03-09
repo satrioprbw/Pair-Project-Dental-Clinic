@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/theme.css">
+  <link rel="stylesheet" href="/css/loopple.css">
+  <title>Dentists</title>
+</head>
+<body>
+  <h1>Our Dentists</h1>
+
+  <% values.forEach(el => { %>
+
+  <div style="margin: 50px;">
+    <p><%= el.name %></p>
+    <p><%= el.specialty %></p>
+    <div>
+      <p style="white-space: pre-line;"><%= el.clinic %></p>
+    </div>
+    <div>
+      <% el.day.split('-').forEach(el2 => { %> 
+        <p>
+          <%= el2 %>
+          <%= el.timeStart %> - <%= el.timeEnd %>
+        </p>
+
+      <% }) %>
+    </div>
+    <button onclick="window.location.href='/appointments/<%= el.id  %>'">Book Now</button>
+  </div>
+
+  <% }) %>
+  
+</body>
+</html>

@@ -22,7 +22,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       medicalRecord: {
-        type: Sequelize.STRING
+        type: Sequelize.UUID
       },
       birthDate: {
         type: Sequelize.DATE

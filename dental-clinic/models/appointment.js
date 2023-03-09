@@ -26,5 +26,13 @@ module.exports = (sequelize, DataTypes) => {
     sequelize,
     modelName: 'Appointment',
   });
+  Appointment.beforeCreate(data => {
+    data.appointmentStatus = 'Scheduled'
+    if(data.specialty == 'General Dentist'){
+      data.price = 100000
+    } else {
+      data.price = 200000
+    }
+  })
   return Appointment;
 };

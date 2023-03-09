@@ -1,62 +1,37 @@
 [
   {
+    "id": "2d37c605-f2e4-4f5d-8323-bba0379463b1",
     "username": "kkalewe0",
     "email": "kkalewe0@google.co.uk",
     "password": "4mqMARMo",
     "role": ""
   },
   {
+    "id": "2d269c5e-7bc1-42f7-9c95-ff11870dbb42",
     "username": "kechelle1",
     "email": "kechelle1@auda.org.au",
     "password": "6OwiFKsiMZtO",
     "role": ""
   },
   {
+    "id": "844e3e71-3148-43ac-96b3-1f512a71202e",
     "username": "bfante2",
     "email": "bfante2@myspace.com",
     "password": "W9sDyfI",
     "role": ""
   },
   {
+    "id": "ac039af8-ccd1-47f3-80b1-e6e08dc154a9",
     "username": "gworssam3",
     "email": "gworssam3@geocities.jp",
     "password": "ibbXtMQnb",
     "role": ""
   },
   {
+    "id": "6601409d-af83-4c35-85fd-1576bcb2baa3",
     "username": "czupo4",
     "email": "czupo4@flavors.me",
     "password": "tgRZjaOG4",
-    "role": ""
-  },
-  {
-    "username": "mattfield5",
-    "email": "mattfield5@netscape.com",
-    "password": "uKy4J7p",
-    "role": ""
-  },
-  {
-    "username": "fquilleash6",
-    "email": "fquilleash6@surveymonkey.com",
-    "password": "hA2h4T27",
-    "role": ""
-  },
-  {
-    "username": "mfloch7",
-    "email": "mfloch7@nasa.gov",
-    "password": "pRflNNVx",
-    "role": ""
-  },
-  {
-    "username": "akobieriecki8",
-    "email": "akobieriecki8@pen.io",
-    "password": "w8pPhh",
-    "role": ""
-  },
-  {
-    "username": "avasse9",
-    "email": "avasse9@columbia.edu",
-    "password": "ZvOqF5tq1x",
     "role": ""
   }
 ]

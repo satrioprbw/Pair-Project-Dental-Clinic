@@ -1,4 +1,5 @@
 'use strict';
+const uuid = require('uuid')
 const {
   Model
 } = require('sequelize');
@@ -19,12 +20,15 @@ module.exports = (sequelize, DataTypes) => {
     last_name: DataTypes.STRING,
     gender: DataTypes.STRING,
     phone: DataTypes.STRING,
-    medicalRecord: DataTypes.STRING,
+    medicalRecord: DataTypes.UUID,
     birthDate: DataTypes.DATE,
-    UserId: DataTypes.INTEGER
+    UserId: DataTypes.UUID
   }, {
     sequelize,
     modelName: 'Profile',
   });
+  Profile.beforeCreate(data => {
+    data.medicalRecord = uuid.v4()
+  })
   return Profile;
 };

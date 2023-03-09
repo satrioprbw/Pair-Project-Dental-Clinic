@@ -1,9 +1,13 @@
 'use strict';
 
+const { DataTypes } = require('sequelize');
+
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   up (queryInterface, Sequelize) {
-    return queryInterface.addColumn('Appointments', 'UserId', {type: Sequelize.UUID})
+    return queryInterface.changeColumn('Appointments', 'schedule', {
+      type: Sequelize.TIME
+    })
     /**
      * Add altering commands here.
      *
@@ -13,7 +17,9 @@ module.exports = {
   },
 
   down (queryInterface, Sequelize) {
-    return queryInterface.removeColumn('Appointments', 'UserId', {})
+    return queryInterface.changeColumn('Appointments', 'schedule', {
+      type: DataTypes.DATE
+    })
     /**
      * Add reverting commands here.
      *
