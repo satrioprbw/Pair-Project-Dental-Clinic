@@ -1,0 +1,102 @@
+[
+  {
+    "name": "drg. Keanu Reeves Sp.BM",
+    "specialty": "Oral & Maxillofacial Surgery",
+    "clinic": "- MDN Dental Clinic - OMDC Dental Clinic",
+    "day": "monday,tuesday,wednesday,thursday,friday",
+    "timeStart": "10:00:00",
+    "timeEnd": "18:00:00",
+    "experienceYear": "9",
+    "dailyPatient": 10
+  }, 
+  {
+    "name": "drg. Harry Bush Sp.BM",
+    "specialty": "Oral & Maxillofacial Surgery",
+    "clinic": "- MDN Dental Clinic - Siloam Hospital",
+    "day": "tuesday,wednesday,thursday",
+    "timeStart": "09:00:00",
+    "timeEnd": "15:00:00",
+    "experienceYear": "10",
+    "dailyPatient": 5
+  }, 
+  {
+    "name": "drg. Ade Rai Sp.KG",
+    "specialty": "Conservative Dentistry",
+    "clinic": "- MDN Dental Clinic - Rumah Sakit Pondok Indah",
+    "day": "monday,wednesday,friday",
+    "timeStart": "14:00:00",
+    "timeEnd": "18:00:00",
+    "experienceYear": "6",
+    "dailyPatient": 7
+  },
+  {
+    "name": "drg. Usain Bolt Sp.KG",
+    "specialty": "Conservative Dentistry",
+    "clinic": "- MDN Dental Clinic - Rumah Sakit Pondok Indah Bintaro",
+    "day": "wednesday,friday",
+    "timeStart": "09:00:00",
+    "timeEnd": "17:00:00",
+    "experienceYear": "8",
+    "dailyPatient": 9
+  },
+  {
+    "name": "drg. Kim Jong-un Sp.Perio",
+    "specialty": "Periodontist",
+    "clinic": "- MDN Dental Clinic - Puskesmas Kramat Jaya",
+    "day": "monday,tuesday,friday",
+    "timeStart": "12:00:00",
+    "timeEnd": "20:00:00",
+    "experienceYear": "5",
+    "dailyPatient": 8
+  },
+  {
+    "name": "drg. Joe Biden Sp.Ort",
+    "specialty": "Orthodontist",
+    "clinic": "- MDN Dental Clinic - OMDC Dental Clinic",
+    "day": "monday,tuesday,wednesday,thursday,friday",
+    "timeStart": "13:00:00",
+    "timeEnd": "17:00:00",
+    "experienceYear": "9",
+    "dailyPatient": 4
+  },
+  {
+    "name": "drg. Donald Trump Sp.Pros",
+    "specialty": "Prosthodontist",
+    "clinic": "- MDN Dental Clinic - Mayapada Hospital",
+    "day": "thursday,friday",
+    "timeStart": "09:00:00",
+    "timeEnd": "17:00:00",
+    "experienceYear": "12",
+    "dailyPatient": 6
+  },
+  {
+    "name": "drg. Melania Trump ",
+    "specialty": "General Dentist",
+    "clinic": "- MDN Dental Clinic",
+    "day": "monday,tuesday,wednesday,thursday,friday",
+    "timeStart": "09:00:00",
+    "timeEnd": "18:00:00",
+    "experienceYear": "3",
+    "dailyPatient": 15
+  },
+  {
+    "name": "drg. Keiran Haynes",
+    "specialty": "General Dentist",
+    "clinic": "- MDN Dental Clinic",
+    "day": "monday,tuesday,wednesday",
+    "timeStart": "10:00:00",
+    "timeEnd": "17:00:00",
+    "experienceYear": "4",
+    "dailyPatient": 12
+  },
+  {
+    "name": "drg. Robyn Villarreal",
+    "specialty": "General Dentist",
+    "clinic": "- MDN Dental Clinic",
+    "day": "monday,tuesday,wednesday,friday",
+    "timeStart": "09:00:00",
+    "timeEnd": "15:00:00",
+    "experienceYear": "4",
+    "dailyPatient": 10
+  }
+]
